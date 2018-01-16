@@ -157,6 +157,8 @@
    end if
 
    LEVEL3 'CL variables initialised ...'
+   LEVEL2 'k1= ',k1
+   LEVEL2 'k2= ',k2
 
    return
 
@@ -293,6 +295,7 @@
             x=k2*cc(1,ci)*cc(1,ci)*cc(2,ci)
             dd(1,1,ci)=x+k1*cc(1,ci)
             dd(1,2,ci) = _ZERO_
+            dd(2,1,ci) = _ZERO_
 !           ds=k2*cl**2*s
             dd(2,2,ci)=x
          end do
